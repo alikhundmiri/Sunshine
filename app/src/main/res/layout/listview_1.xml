@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:id="@+id/bg_">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="32˚"
+            android:id="@+id/tv_today_temp"
+            android:textSize="@dimen/abc_text_size_display_4_material"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="40sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/background_material_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="21˚"
+            android:id="@+id/tv_tomorrow_temp"
+            android:textSize="@dimen/abc_text_size_display_1_material"
+            android:layout_below="@+id/tv_today_temp"
+            android:layout_alignLeft="@+id/tv_today_temp"
+            android:layout_alignStart="@+id/tv_today_temp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Today, Date"
+            android:id="@+id/tv_today_date"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+
+        <ImageView
+            android:layout_width="180sp"
+            android:layout_height="140sp"
+            android:id="@+id/iv_weather_status"
+            android:src="@color/dim_foreground_disabled_material_dark"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Today&apos;s Status"
+            android:id="@+id/tv_weather_status"
+            android:layout_alignBottom="@+id/tv_tomorrow_temp"
+            android:layout_alignLeft="@+id/iv_weather_status"
+            android:layout_alignStart="@+id/iv_weather_status" />
+
+
+    </RelativeLayout>
+</LinearLayout>
